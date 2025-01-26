@@ -1,141 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QA Portfolio - Tudor Nicoara</title>
-    <meta charset="UTF-8"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
             color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            margin: 0;
         }
-        h1, h2, h3 {
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
             color: #2c3e50;
+            margin-bottom: 20px;
         }
+
+        p, a {
+            font-size: 1rem;
+        }
+
         a {
-            text-decoration: none;
             color: #3498db;
+            text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .container {
-            margin: 20px 0;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .skills-container div {
-            flex: 1 1 200px;
-        }
-        .projects {
-            display: flex;
+
+        .skills-container, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
         }
-        .project-card {
-            flex: 1;
-            background: #f9f9f9;
+
+        .project-card, .skill-card {
+            background: white;
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
+
+        .project-card:hover, .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
         .project-card h4 {
-            margin-top: 0;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .skill-card a {
+            display: inline-block;
+            margin: 0 5px;
+            transition: transform 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        .skill-card a:hover {
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header h2 {
+                font-size: 1rem;
+            }
+
+            .skills-container, .projects {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
         }
     </style>
 </head>
 <body>
 
-<h1>Hi there 👋</h1>
-<h2>I am Tudor Nicoara, an enthusiastic Quality Assurance Tester from Romania.</h2>
+<header>
+    <h1>Hi there 👋</h1>
+    <h2>I am Tudor Nicoara, an enthusiastic Quality Assurance Tester from Romania.</h2>
+</header>
 
 <div class="container">
-    <p>🌱 <strong>Currently learning:</strong> manual Quality Assurance, API testing, and automation basics.</p>
-    <p>👯 <strong>Looking to collaborate:</strong> Open to working on software testing projects, from development to implementation.</p>
-    <p>🤝 <strong>Need help with:</strong> Automated QA practices and advanced tools.</p>
-    <p>📫 <strong>Contact:</strong> Mail me on: <a href="mailto:tudor.n@icloud.com">tudor.n@icloud.com</a> <br> or
-        on <a href="https://linkedin.com/in/tudor-nicoara-qa369" target="_blank">LinkedIn</a>
-    </p>
+    <section>
+        <p><strong>Certified</strong> ISTQB Manual QA Engineer with a strong foundation in testing methodologies and
+            keen attention to detail.</p>
+        <p><strong>Currently advancing skills in:</strong> Automation testing tools and frameworks.</p>
+        <p><strong>Collaborative mindset:</strong> Eager to contribute to impactful software testing projects and
+            ensure high-quality deliverables.</p>
+        <p><strong>Get in touch:</strong> Reach me at <a href="mailto:tudor.n@icloud.com">tudor.n@icloud.com</a> or
+            connect on <a href="https://linkedin.com/in/tudor-nicoara-qa369" target="_blank">LinkedIn</a>.</p>
+        <p><strong>Check my CV for more details:</strong><a href=""> Link</a></p>
+    </section>
+
+    <section>
+        <h3>Skills</h3>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h4>Languages</h4>
+                <p>
+                    <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+                    </a>
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h4>Tools</h4>
+                <p>
+                    <a class="icon-link" href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+                    </a>
+                    <a class="icon-link" href="https://postman.com" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
+                    </a>
+                    <a class="icon-link" href="https://www.soapui.org/" target="_blank" rel="noreferrer">
+                        <img src="https://static1.smartbear.co/smartbearbrand/media/images/home/soapui-icon.svg" alt="soapui" width="40" height="40"/>
+                    </a>
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h4>Issue & Project Management</h4>
+                <p>
+                    <a class="icon-link" href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg" alt="jira" width="40" height="40"/>
+                    </a>
+                    <a class="icon-link"
+                       style="position: relative;
+                       top: 4px;"
+                       href="https://www.atlassian.com/software/confluence" target="_blank" rel="noreferrer">
+                        <img src="https://veniture.net/hs-fs/hubfs/confluence.png?width=400&height=400&name=confluence.png" alt="confluence" width="40" height="40"/>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Pet Projects</h3>
+        <div class="projects">
+            <div class="project-card">
+                <h4>E-commerce Platform Testing</h4>
+                <p>📋 Created detailed test cases and test plans for functional testing.</p>
+                <p>🐞 Reported and tracked bugs using Jira.</p>
+                <p>🔗 <a href="#">View Project</a></p>
+            </div>
+            <div class="project-card">
+                <h4>Banking App QA</h4>
+                <p>📊 Conducted API testing using Postman and ensured compliance with documentation.</p>
+                <p>📂 Documented test scenarios for critical financial operations.</p>
+                <p>🔗 <a href="#">View Project</a></p>
+            </div>
+        </div>
+    </section>
 </div>
 
-<div class="section">
-    <h3 style="margin-bottom: 0;">Skills</h3>
-    <div class="skills-container">
-        <div>
-            <h4 style="margin-top: 10px">Languages:</h4>
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                  target="_blank"
-                  rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                     alt="javascript"
-                     width="40"
-                     height="40"/>
-            </a></p>
-        </div>
-
-        <div>
-            <h4 style="margin-top: 10px">Tools:</h4>
-            <p>
-                <a style="text-decoration: none; margin-right: 8px;" href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
-                </a>
-                <a style="text-decoration:none; margin-right: 8px;" href="https://postman.com" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
-                </a>
-                <a style="text-decoration:none; margin-right: 8px;" href="https://www.soapui.org/" target="_blank" rel="noreferrer">
-                    <img src="https://static1.smartbear.co/smartbearbrand/media/images/home/soapui-icon.svg" alt="soapui" width="40" height="40"/>
-                </a>
-            </p>
-        </div>
-        <div>
-            <h4 style="margin-top: 10px">Issue & Project Management:</h4>
-            <p>
-                <a style="text-decoration:none; margin-right: 5px;" href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg" alt="jira" width="40" height="40"/>
-                </a>
-                <a style="text-decoration:none;
-                          margin-right: 5px;
-                          position: relative;
-                          top: 5px;"
-                   href="https://www.atlassian.com/software/confluence" target="_blank" rel="noreferrer">
-                    <img src="https://veniture.net/hs-fs/hubfs/confluence.png?width=400&height=400&name=confluence.png" alt="confluence" width="40" height="40"/>
-                </a>
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Pet Projects</h2>
-    <div class="projects">
-        <div class="project-card">
-            <h4>E-commerce Platform Testing</h4>
-            <p>📋 Created detailed test cases and test plans for functional testing.</p>
-            <p>🐞 Reported and tracked bugs using Jira.</p>
-            <p>🔗 <a href="#">View Project</a></p>
-        </div>
-        <div class="project-card">
-            <h4>Banking App QA</h4>
-            <p>📊 Conducted API testing using Postman and ensured compliance with documentation.</p>
-            <p>📂 Documented test scenarios for critical financial operations.</p>
-            <p>🔗 <a href="#">View Project</a></p>
-        </div>
-    </div>
-</div>
+<footer>
+    <p>&copy; 2025 Tudor Nicoara</p>
+</footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
