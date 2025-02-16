@@ -1,3 +1,11 @@
+E-commerce Platform Testing
+
+📋 Created detailed test plan based on customer requirements for functional testing for the CEL e-commerce platform. Upon creating the test plan, purceeded to create a testing checklist with the intended testing cases for cross-browser testing. Test cases were created, to follow all needed requirements underlined in the E-commerce platform test plan. 
+
+🐞 Issue management of reported and tracked bugs was conducted through Jira software. The project follow-up of storing informations and documents was maintained on Confluence platform.
+
+🔗 View Project links:
+
 Test Plan CEL.ro:	
 https://docs.google.com/document/d/1HfxNfyOpf038wAne4Sg-Tylw41tphXev/edit?usp=sharing&ouid=116659881787111771557&rtpof=true&sd=true
 
