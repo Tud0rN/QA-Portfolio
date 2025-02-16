@@ -96,9 +96,28 @@
         }
 
         .skill-card a {
-            display: inline-block;
-            margin: 0 5px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 15px;
             transition: transform 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        .js img {
+            padding: 4px;
+        }
+        .pm img {
+            padding: 4px;
+        }
+        .su img {
+            padding: 3px;
+        }
+        .jr img {
+            padding: 3px;
+        }
+        .cf img {
+            padding: 7px;
         }
 
         .skill-card a:hover {
@@ -145,43 +164,60 @@
         <h3>Skills</h3>
         <div class="skills-container">
             <div class="skill-card">
-                <h4>Languages</h4>
-                <p>
-                    <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+                <h4 style="margin-bottom: 10px;">Languages</h4>
+                <p style="display: flex;
+                          align-items: center;
+                          justify-content: center;">
+                    <a class="icon-link js" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"
+                             width="40"
+                             height="40"/>
+                        <span>Javascript</span>
+                    </a>
+                    <a class="icon-link" href="https://www.python.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+                        <span>Python</span>
                     </a>
                 </p>
             </div>
 
+
             <div class="skill-card">
-                <h4>Tools</h4>
-                <p>
+                <h4 style="margin-bottom: 10px;">Tools</h4>
+                <p style="display: flex;
+                          align-items: center;
+                          justify-content: center;">
                     <a class="icon-link" href="https://www.mysql.com/" target="_blank" rel="noreferrer">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+                    <span>MySQL</span>
                     </a>
-                    <a class="icon-link" href="https://postman.com" target="_blank" rel="noreferrer">
+                    <a class="icon-link pm" href="https://postman.com" target="_blank" rel="noreferrer">
                         <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
+                    <span>Postman</span>
                     </a>
-                    <a class="icon-link" href="https://www.soapui.org/" target="_blank" rel="noreferrer">
+                    <a class="icon-link su" href="https://www.soapui.org/" target="_blank" rel="noreferrer">
                         <img src="https://static1.smartbear.co/smartbearbrand/media/images/home/soapui-icon.svg" alt="soapui" width="40" height="40"/>
+                    <span>SoapUI</span>
                     </a>
                 </p>
             </div>
 
             <div class="skill-card">
-                <h4>Issue & Project Management</h4>
-                <p>
-                    <a class="icon-link" href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg" alt="jira" width="40" height="40"/>
+                <h4 style="margin-bottom: 10px;">Issue & Project Management</h4>
+                <p style="display: flex;
+                          align-items: center;
+                          justify-content: center;">
+                    <a class="icon-link jr" href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg" alt="jira" width="40" height="40"/>
+                    <span>Jira</span>
                     </a>
-                    <a class="icon-link"
-                       style="position: relative;
-                       top: 4px;"
-                       href="https://www.atlassian.com/software/confluence" target="_blank" rel="noreferrer">
-                        <img src="https://veniture.net/hs-fs/hubfs/confluence.png?width=400&height=400&name=confluence.png" alt="confluence" width="40" height="40"/>
+                    <a class="icon-link cf" href="https://www.atlassian.com/software/confluence" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/confluence/confluence-original.svg" alt="confluence" width="40" height="40"/>
+                    <span>Confluence</span>
                     </a>
                 </p>
             </div>
+
         </div>
     </section>
 
@@ -189,31 +225,19 @@
         <h3>Pet Projects</h3>
         <div class="projects">
             <div class="project-card">
-                <h4>E-commerce Platform Testing</h4>
+                <h4>E-commerce Platform Testing. CEL Romania</h4>
                 <p>📋 Created detailed test cases and test plans for functional testing.</p>
                 <p>🐞 Reported and tracked bugs using Jira.</p>
-                <p>🔗 <a href="#" target="_blank">View Project</a></p>
+                <p>🔗 <a href="https://tud0rn.github.io/Pet-Project-1/" target="_blank">View Project</a></p>
             </div>
             <div class="project-card">
-                <h4>Banking App QA</h4>
+                <h4>Banking App QA. In Progress</h4>
                 <p>📊 Conducted API testing using Postman and ensured compliance with documentation.</p>
                 <p>📂 Documented test scenarios for critical financial operations.</p>
-                <p>🔗 <a href="#" target="_blank">View Project</a></p>
+                <p>🔗 <a href="https://tud0rn.github.io/Pet-Project-2/" target="_blank">View Project</a></p>
             </div>
         </div>
     </section>
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
